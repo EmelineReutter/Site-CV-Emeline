@@ -34,11 +34,21 @@
     margin-top: 7px;
 }
 
+#logoLinkedin:hover {
+    background-color: violet;
+    border-radius: 10px;
+}
+
 #logoCv {
     width: 40px;
     height: 40px;
     margin-left: 50px;
     margin-top: 6px;
+}
+
+#logoCv:hover {
+    background-color: violet;
+    border-radius: 10px;
 }
 
 p {
