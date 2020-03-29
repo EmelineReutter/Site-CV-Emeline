@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: url(Frozen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Navbar {
+    background-color: #7b9bb870;;
+    width: 80%;
+    height: 90px; 
+    margin-left: 180px;
+    border-radius: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-family: 'horizon';
+    color: aliceblue;
+    font-size :-webkit-xxx-large;
+}
+h3 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    margin-left: 20px;
+    color: aliceblue;
+}
+#Header {
+    background-color: #8a9ac200;
+    width: 98%;
+    height: 100px;
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+    
+}
+
+#Container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#menu {
+    width: 80%;
+    display: inline-block;
+    margin-left: 180px;
+    border-radius: 30px;
+    background: linear-gradient(#6585b88c, #3d9f838f, #bbb56491, #bca41b36, #c9985587, #41353f9e);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#aside {
+    background-color: slategray;
+    width: 100%;
+
+}
+#footer {
+    background-color: steelblue;
+
+}
+.Liste{
+    display: inline;
+    font-family: 'Montserrat';
+    color:aliceblue;
+}
+a {
+    text-decoration: none;
+    color:aliceblue;
+}
+a:hover {
+    color: chartreuse;
+}
+
+img {
+    width: 75%;
+    border-radius:60px;
+
+}
+
+#BarreDeNav  {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+ul {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+p {
+    margin: 20px 20px 20px 20px;
+    font-family: 'Montserrat';
+    font-size: larger;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+#Image1:hover {
+    width: 90%;
+    transition: 4s;
+}
+
+#Image2:hover {
+    width: 90%;
+    transition: 4s;
+}
+
+#Image3:hover {
+    width: 90%;
+    transition: 4s;
+}
