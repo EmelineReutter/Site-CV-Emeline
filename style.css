@@ -26,6 +26,21 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+#logoLinkedin {
+    width: 22px;
+    height: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+#logoCv {
+    width: 22px;
+    height: 21px;
+    margin-left: 50px;
+    margin-bottom: -2px;
+}
+
 p {
     display: flex;
     justify-content: center;
@@ -44,9 +59,14 @@ p {
     font-family: 'Dosis', sans-serif;
     font-style: italic;
 }
+#linkedin {
+    width: 22px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
 
 #aPropos {
-    display: flex;
     justify-content: center;
     font-size: x-large;
     color:white;
@@ -76,11 +96,13 @@ p {
     background-image: url(rose.png);
     font-size: -webkit-xxx-large;
     padding: 10px 10px 10px 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 
 #portfolio {
-    width: 100%;
+    margin: 10px;
     background-image: url(Pink.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,6 +110,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .miniatures {
@@ -121,7 +144,7 @@ p {
     justify-content: center;
     align-items: center;
 }
-img {
+a img {
     width: 394px;
     height: 344px;
 }
