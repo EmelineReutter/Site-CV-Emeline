@@ -101,13 +101,13 @@ p {
     background-image: url(rose.png);
     font-size: -webkit-xxx-large;
     padding: 10px 10px 10px 10px;
-    margin: 10px;
+    margin: 44px;
     border-radius: 10px;
 }
 
 
 #portfolio {
-    margin: 10px;
+    margin: 44px;
     background-image: url(Pink.png);
     background-repeat: no-repeat;
     background-size: cover;
