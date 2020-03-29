@@ -28,17 +28,17 @@
 }
 
 #logoLinkedin {
-    width: 22px;
-    height: 20px;
-    margin-left: 20px;
-    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 7px;
 }
 
 #logoCv {
-    width: 22px;
-    height: 21px;
+    width: 40px;
+    height: 40px;
     margin-left: 50px;
-    margin-bottom: -2px;
+    margin-top: 6px;
 }
 
 p {
@@ -58,12 +58,7 @@ p {
     background-color: #dd75a994;
     font-family: 'Dosis', sans-serif;
     font-style: italic;
-}
-#linkedin {
-    width: 22px;
-    height: 20px;
-    margin-left: 10px;
-    margin-top: 7px;
+    align-items: center;
 }
 
 #aPropos {
