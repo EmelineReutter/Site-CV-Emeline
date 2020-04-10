@@ -1,0 +1,188 @@
+* { margin : 0;
+    box-sizing: border-box;
+}
+/*CONTAINER PRINCIPAL*/
+.container {
+    background-image: linear-gradient(-225deg, #a63e0d 10%, #e39937e3 50%), url(images/canyon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*HEADER*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.header h1 {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+.header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.header li {
+    margin: 10px;
+}
+.icone-navbar {
+    filter: invert();
+    width: 50%;
+    transition: 2s;
+}
+.icone-navbar:hover {
+    width: 80%;
+    transition: 2s;
+}
+/*CONTAINER BODY*/
+.container-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+/*CONTAINER-LEFT*/
+.container-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.container-left h1 {
+    color: white;
+    font-size: -webkit-xxx-large;
+    font-weight: bolder;
+    font-family: 'Fredoka One', cursive;
+    border-style: dashed;
+    padding: 40px;
+}
+/*CONTAINER-RIGHT*/
+.container-right {
+    width: 70%;
+}
+.container-right-part1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.container-right-part2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.container-right-part3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;  
+}
+/*PROJETS*/
+.projets {
+    background-color:#7B5146;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+    width: 40%;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: -1px 13px 32px;
+}
+.projets img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.img-projets {
+    border-bottom-style: solid;
+    border-color: white;
+}
+.img-projets:hover {
+    border-color:#C79A8B;
+    transition: 1s;
+}
+.projets:hover {
+    border-color:#C79A8B;
+    transition: 1s;
+    color: #EDB18F;
+}
+/* FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-block-start-style: dashed;
+    border-block-start-color: white;
+    background-color: #7b5146d9;
+    margin-block-start: 5%;
+}
+.footer h1 {
+    color: white;
+    font-weight: bolder;
+    font-family: 'Fredoka One', cursive;
+    padding: 40px;
+    font-size: large;
+}
+/*LIENS*/
+a {
+    text-decoration: none;
+}
+/* RESPONSIVE*/
+@media screen and (max-width: 800px) {
+    .container-body{
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
+    .container-left h1 {
+        margin-bottom: 35px;
+        font-size: x-large;
+        font-size: x-large;
+        padding: 20px;
+        text-align: center;
+  
+    }
+    .titre-texte-presentation {
+        text-align: center;
+    }
+
+    .container-right-p {
+        text-align: center;
+        margin-top: 20px;
+        padding: 1px;
+    }
+    .container-right p {
+        text-align: center;
+        padding: 25px;
+    }
+    .container-right-img {
+        padding: 15px;
+    }
+    .icone-navbar {
+        width: 100%;
+    }
+    .header {
+        padding:20px;
+    }
+    .header h1{
+    font-size: large;
+    }
+    .projets{
+        font-size: small;
+    }
+    .container-right {
+        padding: 1px;
+        width: 100%;
+    }
+    .footer h1 {
+        font-size: small;
+    }
+
+}
