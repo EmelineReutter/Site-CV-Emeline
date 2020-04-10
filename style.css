@@ -1,179 +1,164 @@
-* { margin:0;
-    box-sizing: border-box;}
-
-
-#presentation {
-    width: 100%;
-    background-image: url(Cerisier.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+* { margin : 0;
+    box-sizing: border-box;
+}
+/*CONTAINER PRINCIPAL*/
+.container {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100vh;
+    width: 100vw;
+}
+/*BLOC PRESENTATION*/
+.presentation {
+    grid-row: 1 / span 8;
+    grid-column: 1 / span 8;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(-225deg, #198dd09c 0%, #82725cb5 50%), url(images/prairie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name:slit-in-vertical;
 }
 
-#photo {
-    background-image: url(Emeline.png);
-    width: 300px;
-    height: 300px;
-    background-repeat: round;
-    background-size: contain;
-    border-radius: 200px;
-    border-style: solid;
-    border-color: #ebafcd;
-    border-width: thick;
-    margin-right: 85px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#logoLinkedin {
-    width: 40px;
-    height: 40px;
-    margin-left: 40px;
-    margin-top: 7px;
-}
-
-#logoLinkedin:hover {
-    background-color: violet;
-    border-radius: 10px;
-}
-
-#logoCv {
-    width: 40px;
-    height: 40px;
-    margin-left: 50px;
-    margin-top: 6px;
-}
-
-#logoCv:hover {
-    background-color: violet;
-    border-radius: 10px;
+.titre-texte-presentation {
+    font-size: -webkit-xxx-large;
+    color: white;
+    font-family: 'Fredoka One', cursive;
 }
 
 p {
-    display: flex;
-    justify-content: center;
-    font-family: 'Dosis', sans-serif;
-    font-size: -webkit-xxx-large;
+    font-size: x-large;
     font-weight: bolder;
-    color: #780f34;
-}
-
-#phraseAccroche {
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    color:white;
-    background-color: #dd75a994;
-    font-family: 'Dosis', sans-serif;
-    font-style: italic;
-    align-items: center;
-}
-
-#aPropos {
-    justify-content: center;
-    font-size: x-large;
-    color:white;
-    font-family: 'Dosis', sans-serif;
-    padding: 50px 50px 50px 50px;
-}
-
-#texte1 {
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    color:#780f34;
-    font-family: 'Dosis', sans-serif;
-    padding: 80px 80px 80px 80px;
-    border-style: dashed;
-    border-color: #ebafcd;
-    line-height: 40px;
-    word-spacing: 5px;
-    text-align: center;
-}
-
-#titre {
-    display: flex;
-    justify-content: center;
-    font-family: 'Dosis', sans-serif;
-    color: #780f34;
-    background-image: url(rose.png);
-    font-size: -webkit-xxx-large;
-    padding: 10px 10px 10px 10px;
-    margin: 44px;
-    border-radius: 10px;
-}
-
-
-#portfolio {
-    margin: 44px;
-    background-image: url(Pink.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 10px;
-}
-
-.miniatures {
-    width: 400px;
-    height: 350px;
-    background-color: lightpink;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-color: white;
-}
-
-.miniatures:hover {
-    border-color: violet;
-}
-
-
-.sousTitre {
     color: white;
-    font-size: x-large;
-    margin: 20px;
-
 }
 
-.contenu {
-    margin-right: 40px;
+h1 {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+/*BLOC À PROPOS*/
+.aPropos {
+    grid-row: 1 / span 4;
+    grid-column: 9 / span 8;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(540deg, #32aabdeb 10%, #33a551e3 110%), url(images/montagne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-a img {
-    width: 394px;
-    height: 344px;
-}
-
-#footer {
+/*BLOC RÉALISATIONS*/
+.realisations {
+    grid-row: 5 / span 4;
+    grid-column: 9 / span 4;
     display: flex;
     justify-content: center;
-}
-
-h2 {
-    font-family:'Dosis', sans-serif;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-h3 {
-    font-family:'Dosis', sans-serif;
-}
-
-#titreQJS {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    color: violet;
-    margin-top: 50px;
-    font-family:'Dosis', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(-225deg, #a63e0d 10%, #e39937e3 50%), url(images/canyon.jpg);
+    background-size: cover;
 }
+/*BLOC COMPÉTENCES*/
+.parcours {
+    grid-row: 5 / span 2;
+    grid-column: 13 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(-225deg, #f7db78 10%, #819b228c 50%), url(images/douceur.jpg);
+    background-size: cover;
+}
+/*BLOC CONTACT*/
+.contact {
+    grid-row: 7 / span 2;
+    grid-column: 13 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(-225deg, #86616deb 10%, #d67a84d9 50%), url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+/*BLOC CV*/
+.curriculumVitae {
+    grid-row: 7 / span 1;
+    grid-column: 15 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #ba91a9f0 10%, #624170d4 50%), url(images/plagesoir.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*BLOC LINKEDIN*/
+.linkedin {
+    grid-row: 8 / span 1;
+    grid-column: 15 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #9bcdcfe3 10%, #32b9c5c7 50%), url(images/sea.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*BLOC GITHUB*/
+.github {
+    grid-row: 8 / span 1;
+    grid-column: 16 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #1b5f80e3 10%, #73a69ceb 50%), url(images/mer.jpg);
+    background-size: cover;
+}
+/*ICÔNES*/
+.icone {
+    filter: invert();
+}
+/*LIENS*/
+a {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+    html {
+            width: fit-content;
+    }
+    .container {
+        width: auto;
+    }
+    .presentation {
+        grid-row: 1 / span 8;
+        grid-column: 1 / span 16;
+        position: relative;
+        z-index: 100;
+    }
+    .titre-texte-presentation {
+        text-align: center;
+        margin: 10px;
+    }
+    p {
+        text-align: center;
+    }
+    .icone-navbar {
+        width: 100%;
+    }
+    .header {
+        padding:20px;
+    }
+    .header li{
+    margin:none;
+    }
+
+}
+    
