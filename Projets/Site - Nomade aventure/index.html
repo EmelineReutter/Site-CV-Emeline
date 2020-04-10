@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nomade Aventure : voyage d'aventure, circuit, randonnée...</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Barre de navigation-->
+    <div class="navbar ">
+        <video id="videoPrincipal"autoplay loop muted>
+            <source src="démo.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+        <!--Barre de navigation de l'acceuil-->
+        <div class="navbarAcceuil">
+            <div id="menu">
+                <button class="menu-button">
+                    <span class="icon-menu">
+                        <span class="icon-menu-bar"></span>
+                        <span class="icon-menu-bar"></span>
+                        <span class="icon-menu-bar"></span>
+                        <span class="icon-menu-bar"></span>
+                    </span>
+                    <span class="menu-button-text hidden-xs">MENU</span>
+                </button>
+            </div>
+            <div id="logo">
+            </div>
+            <div id="contact">
+                - Qui sommes nous ?
+            </div>
+            <div id="selection">
+                - Ma sélection
+                <img id="coeur" src="coeur.png">
+            </div>
+            <div id="tel">
+            <img id="telephone" src="telephone.png">
+                Télephone : 01 46 33 71 71
+            </div>
+        </div>
+        <!-- Barre de recherche pour voyage-->
+        <div class="rechercheVoyage">
+                <div id="btnVoyage">
+                    <label for="destination"></label>
+                    <select id="destination" name="pays">
+                    <option value="destination"> Destination</option>
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="suisse">Suisse</option>
+                    </optgroup>
+                    <optgroup label="Afrique">
+                        <option value="algerie">Algérie</option>
+                        <option value="tunisie">Tunisie</option>
+                        <option value="maroc">Maroc</option>
+                        <option value="madagascar">Madagascar</option>
+                        <option value="benin">Bénin</option>
+                        <option value="togo">Togo</option>
+                    </optgroup>
+                    <optgroup label="Amerique">
+                        <option value="canada">Canada</option>
+                    </optgroup>
+                    </select>
+                </div>
+                <!-- recherche Activité -->
+                <div id="btnActivite">
+                    <label for="Activite"></label>
+                    <select id="Activite" name="activite">
+                    <option value="Activités"> Activités</option>
+                    <option value="cheval"> A cheval</option>
+                    <option value="bien-être">bien-être</option>
+                    <option value="canoe/kayac">Canoë/Kayac</option>
+                    <option value="culture et civilisation">Culture et Civilisation</option>
+                    <option value="découverte">Découverte</option>
+                    <option value="en bateau">En bateau</option>
+                    <option value="neige">Neige</option>
+                    <option value="Photo">Photo</option>
+                    <option value="safari">Safari</option>
+                    <option value="survie">Survie</option>
+                    </select>
+                </div>
+                <!-- Date -->
+                <div id="date">
+                    <input id="dateSejour" type="date" name="Date de départ">
+                </div>
+                <!-- Check -->
+                <div id="check">
+                    <label for="garantis"> Départs garantis</label>
+                    <input type="checkbox" id="scales" name="scales"
+                    checked>
+                </div>
+                <!-- Bouton rechercher-->
+                <div id="recherche">
+                    <button class="chercher"type="button"> Je recherche 🔎</button>
+                </div>
+        </div>
+    </div>
+    <!-- Certifications du site-->
+    <div class="certifications">
+        <div class="logo">
+            <img id="imgLogo" src="france.png">
+            <div class="texteLogo">
+                <span class="phrase">Des guides</span>
+                <span class="phrase"><strong>francophones</strong></span>
+                <span class="phrase">expérimentés</span>
+            </div>
+        </div>
+        <div class="logo">
+            <img id="imgLogo" src="arbres.png">
+            <div class="texteLogo">
+                <span class="phrase">Vos émissions</span>
+                <span class="phrase"><strong> CO²</strong></span>
+                <span class="phrase"><strong> à 100%</strong></span>
+            </div>
+        </div>
+        <div class="logo">
+            <img id="imgLogo" src="terre.png">
+            <div class="texteLogo">
+                <span class="phrase">Un voyagiste</span>
+                <span class="phrase">engagé pour un</span>
+                <span class="phrase"><strong> tourisme durable</strong></span>
+            </div>
+        </div>
+        <div class="logo">
+            <img id="imgLogo" src="carte.png">
+            <div class="texteLogo">
+                <span class="phrase">45 ans</span>
+                <span class="phrase"><strong>d'expériences</strong></span>
+                <span class="phrase"> et de savoir faire</span>
+            </div>
+        </div>
+        <div class="logo">
+            <img id="imgLogo"src="smiley.png">
+            <div class="texteLogo">
+                <span class="phrase"><strong>93%</strong></span>
+                <span class="phrase">de </span>
+                <span class="phrase"><strong> satisfaction</strong></span>
+            </div>
+        </div>
+    </div>
+    <!-- Image avec engagement du site-->
+    <div class="image1">
+        <img id="tourismeDurable" src="voyager-responsable.jpg">
+    </div>
+    <!-- Articles de voyage du site-->
+    <div class="articles">
+        <div class="artcl1">
+            <h2> Les bons plans voyages à saisir !</h2>
+            <p id="titreArtcl1"> Des départs garantis, des aubaines, des voyages qui partent bientôt avec déjà quelques inscrits... profitez de nos bonnes affaires !</p>
+            <img id="bandeau" src="bandeau-grandnord.jpg">
+        </div>
+        <div class="voyage">
+            <img id="photo1" src="carre1.jpg">
+            <img id="photo2" src="carre2.jpg">
+            <img id="photo3" src="carre3.jpg">
+        </div>
+        <div class="texteVoyage">
+            <div id="description1">
+                <span class="titreDescription">Islande ⏐ Voyage sur mesure </span>
+                <span class="titre2Description">Road trip sur la côte sud</span>
+                <span class="titre3Description">8 jours à partir de 1269 €</span>
+            </div>
+            <div id="description2">
+                <span class="titreDescription">Arménie ⏐ Voyage en petit groupe</span>
+                <span class="titre2Description">Absolut Caucase </span>
+                <span class="titre3Description">17 jours à partir de 2869 €</span>
+            </div>
+            <div id="description3">
+                <span class="titreDescription">Madagascar ⏐ Voyage en petit groupe</span>
+                <span class="titre2Description">Trek Robinson entre terre et mer !</span>
+               <span class="titre3Description"> 19 jours à partir de 3099 €</span>
+            </div>
+        </div>
+    </div>
+    <!-- Vidéo de présentation du site-->
+    <div class="videoPresentation">
+        <video id="nosVoyages" controls>
+            <source src="clip.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+    </div>
+    <!-- Témoignages des clients-->
+    <div class="temoignages">
+        <img id="bulle" src="bulle.png">
+        <span><h1 id="titreBulle"> Ils y sont allés, ils nous en parlent !</h1></span>
+        <span><h3>Rien de tel que les avis de nos clients pour vous éclairer dans votre choix… et nous aider à améliorer nos voyages !</h3></span>
+        <div id="temoin">
+                <img id="moi" src="moi.jpeg">
+            <div id="info">
+                <span id="prenom"> Emeline,</span>
+                <span id="partie"> Partie le 01/04/2020</span>
+                <span id="avis">Très satisfaite</span>
+            </div>
+            <div id="recit">
+                <h3> Ce site est incroyablement beau ! cela me rappelle mon voyage 😄</h3>
+                <p id="p1">	
+                    Magnifique expérience nature en Cappadoce chevaux très surs, paysages grandioses équipe locale très professionnelle et bienveillante,rencontres authentiques et humaines avec les personnes de l’hôtel/agence et passion contagieuse du cheval transmise par Monsieur Ibrahim guide équestre.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Récompenses de l'agence de voyage-->
+    <div class="recompenses">
+        <h1 id="titrere"> Nos récompenses</h1>
+        <img src="encart-recompenses.jpg">
+    </div>
+    <!-- Présentation de l'équipe-->
+    <div class="equipe">
+        <div id="titrEquipe">
+            <div id="imgLogoTribu">
+                <img id="imgTribu" src="logo-tribu.png">
+            </div>
+            <div id="jecontientlestitres">
+            <h1 id="h1titre">Une équipe de passionnés</h1>
+            <h3>Des spécialistes à votre écoute qui sauront mettre leur expérience au service de vos envies !</h3>
+            </div>
+        </div>
+        <div id="tribuTexte">
+            Chez Nomade Aventure, nous sommes nés de nos explorations vers des destinations inconnues, des pays confidentiels. Ainsi, vous ne croiserez chez nous, que des baroudeurs, des voyageurs, des randonneurs, des routards, des passionnés… qui sauront vous faire vivre le monde tel qu'il est, de manière authentique et durable. Créatifs et curieux, c'est lors de leurs voyages de reconnaissance terrain qu'ils dénichent des petits bouts de paradis afin de créer pour vous des circuits hors des sentiers battus. Avec une forte expérience en randonnée et trek, un peu partout dans le monde, chaque membre de notre fine équipe saura vous conseiller pour dégoter le voyage d'aventure de vos rêves. De fins connaisseurs, donc, et de vrais aventuriers, à votre service, avec chacun, son secteur de prédilection. Ainsi, vous partirez confiants : chez Nomade, on sait de quoi on parle !
+        <img src="tribu-nomade-aventure.jpg">
+        </div>
+    </div>
+    <!-- Footer avec contact, numéro, logo des réseaux sociaux-->
+    <div class="footer">
+        <div id="contactFooter">
+                Psst... on reste en contact ?! Recevez notre newsletter !
+            <div id="partieMail">
+                <input id="boutonMail" class="form-control" id="newsletter-email" name="newsletter-email" placeholder="email@monadresse.com" type="text" value="">
+                <button id="boutonFooter"> ok </button>
+            </div>
+        </div>
+        <div id="trait1">
+        </div>
+        <div id="telFooter">
+            <span id="icone1">
+                <img src="megaphone_39495.png"> 
+                Appelez-nous !
+            </span>
+            <span id="icone2">  
+                01 46 33 71 71 
+            </span>
+            <span id="icone3">
+                40 rue de la Montagne Sainte Geneviève Paris 75005
+            </span>
+            <span id="icone4">
+                © Copyright Emeline Reutter - 2020
+            </span>
+        </div>
+        <div id="trait2">
+
+        </div>
+        <div id="reseauxSociaux">
+             Qui m'aime me suive !
+            <div id="container">
+                <img id="rs1" src="facebook.png">
+                <img id="rs2" src="twitter.png">
+                <img id="rs3" src="instagram.png">
+                <img id="rs4" src="youtube.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
