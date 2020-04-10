@@ -1,0 +1,586 @@
+* { margin: 0;
+box-sizing: border-box;}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+#videoPrincipal {
+    width: 100%;
+    height: 100%;
+}
+
+.navbarAcceuil {
+    background-color: #00000052;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo {
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 220px;
+}
+
+#coeur {
+    margin-left: 5px;
+    width: 15%;
+}
+
+#telephone {
+    filter: grayscale(1);
+    width: 8%;
+    margin-right: 5px;
+}
+
+#destination {
+    border-style: hidden;
+    font-size: large;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#Activite {
+    border-style: hidden;
+    font-size: large;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#contact {
+    color: white;
+    margin-right: 20px;
+    margin-left: 430px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#selection {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#tel {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: x-large;
+}
+
+.menu-button {
+    background-color: #7fffd400;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: large;
+}
+
+.rechercheVoyage {
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+}
+
+#date {
+    background-color:rgb(248, 248, 248);
+    border-radius: 3px;
+    margin-left: 10px;
+    padding-right: 20px;
+    width: 160px;
+    height: 27px;
+    margin-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#dateSejour {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-style: hidden;
+    width: 160px;
+    height: 27px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: large;
+}
+
+.chercher {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-style: hidden;
+    background-color: rgb(248, 248, 248);
+    margin-left: 20px;
+    border-radius: 3px;
+    height: 27px;
+    color: #000000;
+    font-size: medium;
+}
+
+#check {
+    background-color:rgb(248, 248, 248);
+    border-radius: 3px;
+    margin-left: 20px;
+    width: 160px;
+    height: 27px;
+    padding-top: 2px;
+}
+
+#imgLogo {
+    margin-right: 10px;
+    width: 33%;
+    margin-left: 10px;
+}
+
+#destination {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+label { 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 20px;
+}
+
+#rechercher {
+    margin-left: 10px;
+}  
+
+#dateDeSejour {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#jeRecherche {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+#marecherche { 
+    width: 150px;
+}
+/*  Partie certification */
+.certifications {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    padding: 20px 40px 20px 40px;
+}
+
+.logo {
+    display: flex;
+}
+
+.texteLogo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Image princiapal */
+.image1 {
+
+    background-image: url(papier.png);
+    display: flex;
+    justify-content: center;
+}
+
+#tourismeDurable {
+    width: 90%;
+    padding: 40px 60px 40px 60px;
+}
+/* articles */
+.articles {
+    background-color:#deb8874a;
+}
+#photo1 {
+    width: 25%;
+    margin-right: 2%;
+}
+
+#photo2 {
+    width: 25%;
+}
+
+#photo3 {
+    width: 25%;
+    margin-left: 2%;
+}
+
+.voyage {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.artcl1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family:'Source Sans Pro', sans-serif;
+    margin: 20px 10px 10px 10px;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#titreArtcl1 {
+    font-family:'Source Sans Pro', sans-serif;
+    margin-bottom: 10px;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+
+.artcl2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#bandeau {
+    width: 79%;
+}
+
+.texteVoyage {
+    background-color:#f5eadc;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#description1 {
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family:'Source Sans Pro', sans-serif;
+    align-items: center;
+
+}
+
+#description2 {
+    width: 25%;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-family:'Source Sans Pro', sans-serif;
+    align-items: center;
+}
+
+#description3 {
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family:'Source Sans Pro', sans-serif;
+    align-items: center;
+
+}
+
+.titreDescription {
+    margin-top: 10px;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.titre2Description {
+    font-size: large;
+}
+
+.titre3Description {
+    font-size: large;
+    margin-top: 5px;
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+/* Vidéo des voyages*/
+
+.videoPresentation {
+    display: flex;
+    justify-content: center;
+    background-image: url(leaves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nosVoyages {
+    width: 70%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 15px;
+}
+
+/* témoignages */
+.temoignages {
+    background-color:#f7f4f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#moi {
+    width: 6%;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+#prenom {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#partie {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#avis {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+#temoin {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+#titreBulle {
+    font-family:'Source Sans Pro', sans-serif;
+    margin: 20px;
+}
+
+span {
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+#recit {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family:'Source Sans Pro',sans-serif;
+    margin-right: 40px;
+}
+
+#p1 {
+    font-size: medium;
+}
+
+#bulle {
+    margin-top: 20px;
+}
+
+/*  Images récompenses*/
+.recompenses {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0ebe6;  
+    flex-direction: column;
+}
+#titrere {
+    color: maroon;
+    font-weight: bold;
+    font-family:'Source Sans Pro',sans-serif;
+    margin: 30px;
+}
+/*Présentation de l'équipe */
+.equipe {
+    background-color: lemonchiffon;
+}
+
+h3 {
+    font-family:'Source Sans Pro',sans-serif; 
+}
+
+#h1titre {
+    font-family:'Source Sans Pro',sans-serif; 
+}
+
+#titrEquipe {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#imgLogoTribu {
+  padding: 20px;
+}
+
+#tribuTexte {
+    background-color: white;
+    font-family:'Source Sans Pro',sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Footer */
+ .footer {
+    background-color: #513834;
+    display: flex;
+    justify-content: space-around;
+    font-family:'Source Sans Pro',sans-serif; 
+    color: white;
+ }
+
+ #trait1 {
+    width: 3px;
+    height: 200px;
+    background-color: #b0885a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ #contactFooter {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #boutonMail {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-family:'Source Sans Pro',sans-serif; 
+ }
+
+ #boutonFooter {
+    border-radius: 10px;
+    background-color: #f5cf87;
+    width: 10%;
+    height: 28px;
+    font-family:'Source Sans Pro',sans-serif; 
+ }
+
+ #telFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    margin: 60px;
+}
+
+
+ #icone1 {
+  
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #icone2 {
+
+    font-size: xx-large;
+    margin-left: 50px;
+ }
+
+ #icone3 {
+    margin-left: 30px;
+ }
+
+ #icone4 {
+    font-size: small;
+    margin-top: 20px;
+ }
+
+#trait2 {
+    width: 3px;
+    height: 200px;
+    background-color: #b0885a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#reseauxSociaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin-left: 30px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#rs1 {
+    margin-right: 20px;
+    width: 10%;
+}
+
+#rs2 {
+    margin-right: 20px;
+    width: 10%;
+}
+
+#rs3 {
+    margin-right: 20px;
+    width: 10%;
+}
+
+#rs4 {
+    margin-right: 20px;
+    width: 10%;
+}
+
