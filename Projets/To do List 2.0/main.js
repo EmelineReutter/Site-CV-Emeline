@@ -1,38 +1,43 @@
-var todoItems = JSON.parse(localStorage.getItem("todoStorage"));
+let todoItems = JSON.parse(localStorage.getItem("todoStorage"));
 console.log(todoItems);
+if (todoItems == null) {
+    todoItems = new Array();
+    console.log(todoItems);
+}
+let parent = document.getElementById("todo");
+let input = document.querySelector(".todoForm input");
 
-var parent = document.getElementById("todo");
-var input = document.querySelector(".todoForm input");
-
-function initialize(){
+function initialize() {
     input.value = "";
-    for(var i=0; i<todoItems.length; i++){
+    for (let i = 0; i < todoItems.length; i++) {
         createTodoItem(todoItems[i], true);
     }
 }
-
 initialize();
 
-function createTodoItem(todoText, isStart){
+function createTodoItem(todoText, isStart) {
+    if (todoItems == "") {
+        todoItems.createElement = [input.value]
+    }
 
-    if(input.value != "" || isStart){
+    if (input.value != "" || isStart) {
         // récupérer input
-        if(input.value != ""){
+        if (input.value != "") {
             todoItems.push(input.value);
             // sauvegarder ma nouvelle todo Items
             localStorage.setItem("todoStorage", JSON.stringify(todoItems));
         }
         // Création de la div "finale"
-        var newTodoItem = document.createElement("div");
+        let newTodoItem = document.createElement("div");
 
         // Creation de nouveaux éléments HTML
-        var check = document.createElement("input");
+        let check = document.createElement("input");
         check.type = "checkbox";
-        var texte = document.createElement("p");
+        let texte = document.createElement("p");
         texte.innerHTML = todoText;
-        var todoActions = document.createElement("div");
-        var mod = document.createElement("i");
-        var suppr = document.createElement("i");
+        let todoActions = document.createElement("div");
+        let mod = document.createElement("i");
+        let suppr = document.createElement("i");
 
         // Attribution de styles
         newTodoItem.className = "todoItem";
@@ -57,18 +62,18 @@ function createTodoItem(todoText, isStart){
 
 }
 
-function deleteTodoItem(event){
+function deleteTodoItem(event) {
     // supprimer l'élément du HTML
-    var btnSupprimer = event.target;
-    var divASupprimer = btnSupprimer.parentNode.parentNode;
+    let btnSupprimer = event.target;
+    let divASupprimer = btnSupprimer.parentNode.parentNode;
     parent.removeChild(divASupprimer);
 
     // supprimer l'élément du tableau
-    var chaineATrouver = divASupprimer.childNodes[1].innerHTML;
-    var index = todoItems.indexOf(chaineATrouver);
+    let chaineATrouver = divASupprimer.childNodes[1].innerHTML;
+    let index = todoItems.indexOf(chaineATrouver);
     todoItems.splice(index, 1);
     localStorage.setItem("todoStorage", JSON.stringify(todoItems));
 }
 
-var bouton = document.querySelector(".btnValider");
-bouton.addEventListener("click", function(){ createTodoItem(input.value, false) });
+let bouton = document.querySelector(".btnValider");
+bouton.addEventListener("click", function () { createTodoItem(input.value, false) });

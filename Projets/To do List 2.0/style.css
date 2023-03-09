@@ -4,8 +4,7 @@ body {
     align-items: center;
     font-family:'Montserrat', sans-serif;
     background-image: url(pink-4933538_1920.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: round;
 }
 
 .container {
@@ -50,14 +49,11 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-    cursor: url(icons8-cherry-blossom-48.png),auto;
+    /*cursor: url(icons8-cherry-blossom-48.png),auto;*/
     transition: 4s;
 }
 .todoItem:hover {
     background-color: lightcoral;
-    width:90% ;
-    transition: 4s;
-
 }
 
 .todoActions i{
