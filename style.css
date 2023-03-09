@@ -1,164 +1,176 @@
-* { margin : 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 /*CONTAINER PRINCIPAL*/
+.prenom-nom {
+  color: #513333;
+}
 .container {
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    height: 100vh;
-    width: 100vw;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 100vh;
+  width: 100vw;
 }
 /*BLOC PRESENTATION*/
 .presentation {
-    grid-row: 1 / span 8;
-    grid-column: 1 / span 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(-225deg, #198dd09c 0%, #82725cb5 50%), url(images/prairie.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation-name:slit-in-vertical;
+  grid-row: 1 / span 8;
+  grid-column: 1 / span 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(-225deg, #198dd09c 0%, #82725cb5 50%),
+    url(images/prairie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: slit-in-vertical;
 }
 
 .titre-texte-presentation {
-    font-size: -webkit-xxx-large;
-    color: white;
-    font-family: 'Fredoka One', cursive;
+  font-size: -webkit-xxx-large;
+  color: white;
+  font-family: "Fredoka One", cursive;
 }
 
 p {
-    font-size: x-large;
-    font-weight: bolder;
-    color: white;
+  font-size: x-large;
+  font-weight: bolder;
+  color: white;
 }
 
 h1 {
-    color: white;
-    font-family: 'Fredoka One', cursive;
+  color: white;
+  font-family: "Fredoka One", cursive;
 }
 /*BLOC À PROPOS*/
 .aPropos {
-    grid-row: 1 / span 4;
-    grid-column: 9 / span 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(540deg, #32aabdeb 10%, #33a551e3 110%), url(images/montagne.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  grid-row: 1 / span 4;
+  grid-column: 9 / span 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(540deg, #32aabdeb 10%, #33a551e3 110%),
+    url(images/montagne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*BLOC RÉALISATIONS*/
 .realisations {
-    grid-row: 5 / span 4;
-    grid-column: 9 / span 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(-225deg, #a63e0d 10%, #e39937e3 50%), url(images/canyon.jpg);
-    background-size: cover;
+  grid-row: 5 / span 4;
+  grid-column: 9 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(-225deg, #a63e0d 10%, #e39937e3 50%),
+    url(images/canyon.jpg);
+  background-size: cover;
 }
 /*BLOC COMPÉTENCES*/
 .parcours {
-    grid-row: 5 / span 2;
-    grid-column: 13 / span 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(-225deg, #f7db78 10%, #819b228c 50%), url(images/douceur.jpg);
-    background-size: cover;
+  grid-row: 5 / span 2;
+  grid-column: 13 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(-225deg, #f7db78 10%, #819b228c 50%),
+    url(images/douceur.jpg);
+  background-size: cover;
 }
 /*BLOC CONTACT*/
 .contact {
-    grid-row: 7 / span 2;
-    grid-column: 13 / span 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(-225deg, #86616deb 10%, #d67a84d9 50%), url(images/contact.jpg);
-    background-position: center;
-    background-size: cover;
-
+  grid-row: 7 / span 2;
+  grid-column: 13 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(-225deg, #86616deb 10%, #d67a84d9 50%),
+    url(images/contact.jpg);
+  background-position: center;
+  background-size: cover;
 }
 /*BLOC CV*/
 .curriculumVitae {
-    grid-row: 7 / span 1;
-    grid-column: 15 / span 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(-225deg, #ba91a9f0 10%, #624170d4 50%), url(images/plagesoir.jpg);
-    background-size: cover;
-    background-position: center;
+  grid-row: 7 / span 1;
+  grid-column: 15 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #ba91a9f0 10%, #624170d4 50%),
+    url(images/plagesoir.jpg);
+  background-size: cover;
+  background-position: center;
 }
 /*BLOC LINKEDIN*/
 .linkedin {
-    grid-row: 8 / span 1;
-    grid-column: 15 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(-225deg, #9bcdcfe3 10%, #32b9c5c7 50%), url(images/sea.jpg);
-    background-position: center;
-    background-size: cover;
+  grid-row: 8 / span 1;
+  grid-column: 15 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #9bcdcfe3 10%, #32b9c5c7 50%),
+    url(images/sea.jpg);
+  background-position: center;
+  background-size: cover;
 }
 /*BLOC GITHUB*/
 .github {
-    grid-row: 8 / span 1;
-    grid-column: 16 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(-225deg, #1b5f80e3 10%, #73a69ceb 50%), url(images/mer.jpg);
-    background-size: cover;
+  grid-row: 8 / span 1;
+  grid-column: 16 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #1b5f80e3 10%, #73a69ceb 50%),
+    url(images/mer.jpg);
+  background-size: cover;
 }
 /*ICÔNES*/
 .icone {
-    filter: invert();
+  filter: invert();
 }
 /*LIENS*/
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 800px) {
-    html {
-            width: fit-content;
-    }
-    .container {
-        width: auto;
-    }
-    .presentation {
-        grid-row: 1 / span 8;
-        grid-column: 1 / span 16;
-        position: relative;
-        z-index: 100;
-    }
-    .titre-texte-presentation {
-        text-align: center;
-        margin: 10px;
-    }
-    p {
-        text-align: center;
-    }
-    .icone-navbar {
-        width: 100%;
-    }
-    .header {
-        padding:20px;
-    }
-    .header li{
-    margin:none;
-    }
+  html {
+    width: fit-content;
+  }
+  .container {
+    width: auto;
+  }
+  .presentation {
+    grid-row: 1 / span 8;
+    grid-column: 1 / span 16;
+    position: relative;
+    z-index: 100;
+  }
+  .titre-texte-presentation {
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    text-align: center;
+  }
+  .icone-navbar {
+    width: 100%;
+  }
+  .header {
+    padding: 20px;
+  }
+  .header li {
+    margin: none;
+  }
 
+  @media (min-width: 320px) and (max-width: 600px) {
+  }
 }
-    
